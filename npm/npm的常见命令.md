@@ -58,12 +58,12 @@ npm install -global <package name>/ git://github.com/package/path.git
 #### （3）强制安装 -f / --force
 安装之前，npm install会先检查，node_modules目录之中是否已经存在指定模块。如果存在，就不再重新安装了，即使远程仓库已经有了一个新版本，也是如此。
 如果你希望，一个模块不管是否安装过，npm 都要强制重新安装，可以使用**-f**或**--force**参数。
-```node
+```
 npm install -g <package name>/ git://github.com/package/path.git -f
 npm install -global <package name>/ git://github.com/package/path.git --force
 ```
 #### （4）安装不同版本 @版本号 @lastest
-```node
+```
 npm install [<@scope>/] <package name>@<version>
 npm install [<@scope>/] <package name>@<version range>
 npm install [<@scope>/] <package name>@lastest
