@@ -43,7 +43,7 @@ npm config edit
 npm info后面加模块名称，可以该模块的信息
 #### 4. npm list
 npm list 可以查看该项目安装的所有模块，以及它们依赖的模块。
-#### 5.npm install
+#### 5. npm install
 Node模块采用npm install命令安装。
 每个模块可以“全局安装”，也可以“本地安装”。“全局安装”指的是将一个模块安装到系统目录中，各个项目都可以调用。一般来说，全局安装只适用于工具模块，比如eslint和gulp。“本地安装”指的是将一个模块下载到当前项目的node_modules子目录，然后只有在项目目录之中，才能调用这个模块。
 #### （1）本地安装
@@ -77,8 +77,23 @@ npm install [<@scope>/] <package name>--save
 npm install [<@scope>/] <package name> --save-dev
 #或者
 npm install [<@scope>/] <package name> -S
-npm install [<@scope>/] <package name> -D
+npm install [<@scope>/] <package n ame> -D
 ```
+#### 6. npm update 更新包
+```
+# 升级当前项目的指定模块
+$ npm update <package name>
+# 升级全局安装的模块
+$ npm update -global <package name>
+```
+#### 7. npm delete 删除包
+```
+# 删除当前项目的指定模块
+$ npm delete <package name>
+# 删除全局安装的模块
+$ npm delete  <package name> -global
+```
+
 
 
 
