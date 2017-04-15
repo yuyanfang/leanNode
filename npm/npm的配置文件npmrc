@@ -1,0 +1,10 @@
+### npm的配置文件npmrc 
+npm 得到它的配置从命令行、环境变量、和npmrc的文件中。
+#### 1. npmrc的文件有四种
+* 每个项目的配置文件(/path/to/my/project/.npmrc)放在项目的根目录下，和packge.json平级。
+* 每个用户的配置文件 (~/.npmrc)
+* 全局配置文件($PREFIX/etc/npmrc)
+* npm的内置配置文件(/path/to/npm/npmrc)  
+所有的配置文件都是已键值对的形式存在，环境变量可以使用**${VARIABLE_NAME}**的形式代替。且用户的配置会覆盖全局配置。
+#### 2. 注释
+npmrc的文件开头需要用**；**或者**#**来注释。
